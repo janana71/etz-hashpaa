@@ -11,6 +11,19 @@ body{margin:0;background:#FAF8F3}
 a{color:#1E4D3B}a:hover{color:#123426}
 a:focus-visible{outline:3px solid #A34E1A;outline-offset:3px}
 @media (prefers-reduced-motion: reduce){.wings-motion{display:none !important}.wings-still{display:block !important}}
+/* כפתורי הקבצים — מבוסס על עיצוב מ־Uiverse.io (0xnihilism), מותאם: הטקסט תמיד גלוי */
+.brutalist-button{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:60px;min-width:200px;box-sizing:border-box;padding:0 26px;background:#063525;color:#F4EFEF;border:3px solid #42c498;border-radius:12px;box-shadow:4px 4px 1px #000;font-weight:700;font-size:17px;text-decoration:none;transition:all .3s cubic-bezier(.25,.8,.25,1)}
+.brutalist-button>*{position:relative;z-index:3}
+.brutalist-button svg{width:22px;height:22px;flex:none;transition:transform .3s cubic-bezier(.25,.8,.25,1)}
+.brutalist-button:hover,.brutalist-button:focus-visible{background:#1a5c46;border-color:#030504;color:#fff;transform:translate(-6px,-6px) rotate(1deg);box-shadow:10px 10px 0 #000,15px 15px 20px rgba(64,164,122,.2)}
+.brutalist-button:hover svg,.brutalist-button:focus-visible svg{transform:translateY(-3px)}
+.brutalist-button:active{transform:translate(-2px,-2px) scale(.97)}
+.brutalist-button::before,.brutalist-button::after{content:"";position:absolute;top:0;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transition:.6s;z-index:1}
+.brutalist-button::before{left:-100%}.brutalist-button::after{left:100%}
+.brutalist-button:hover::before{animation:swipeRight 1.5s infinite}.brutalist-button:hover::after{animation:swipeLeft 1.5s infinite}
+@keyframes swipeRight{100%{transform:translateX(200%) skew(-45deg)}}
+@keyframes swipeLeft{100%{transform:translateX(-200%) skew(-45deg)}}
+@media (prefers-reduced-motion: reduce){.brutalist-button,.brutalist-button:hover,.brutalist-button:focus-visible{transform:none;transition:none}.brutalist-button::before,.brutalist-button::after{animation:none !important}}
 </style>
 
 </head>
@@ -255,7 +268,7 @@ a:focus-visible{outline:3px solid #A34E1A;outline-offset:3px}
 <p style="margin: 0; font-size: 16px; color: #4A5450">לשרטוט העלה על דף בגודל A3 (PDF מוכן להדפסה)</p>
 </div>
 </div>
-<a href="https://drive.google.com/file/d/1VvLmCR-VWU_QCwbRseSS_AScDinS9f5w/view?usp=sharing" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 2px solid #1E4D3B; border-radius: 4px; color: #1E4D3B; font-weight: 700; text-decoration: none">להורדת התבנית</a>
+<a class="brutalist-button" href="https://drive.google.com/file/d/1VvLmCR-VWU_QCwbRseSS_AScDinS9f5w/view?usp=sharing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg><span>להורדת התבנית</span></a>
 </li>
 <li style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 24px 0; border-bottom: 1px solid #D5DED8">
 <div style="display: flex; gap: 20px; align-items: baseline; min-width: 0; flex: 1 1 320px">
@@ -265,7 +278,7 @@ a:focus-visible{outline:3px solid #A34E1A;outline-offset:3px}
 <p style="margin: 0; font-size: 16px; color: #4A5450">אוגדן לגננות: רעיונות לתיווך, פעילויות, סרטונים והשראה מעולם האמנות</p>
 </div>
 </div>
-<a href="https://docs.google.com/document/d/1lZHxlm6MfQH1ajSqcdHzo5ebJQOCAVBGi2YzgZ1foyk/edit?usp=sharing" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 2px solid #1E4D3B; border-radius: 4px; color: #1E4D3B; font-weight: 700; text-decoration: none">לחומרי העזר</a>
+<a class="brutalist-button" href="https://docs.google.com/document/d/1lZHxlm6MfQH1ajSqcdHzo5ebJQOCAVBGi2YzgZ1foyk/edit?usp=sharing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg><span>לחומרי העזר</span></a>
 </li>
 <li style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 24px 0; border-bottom: 1px solid #D5DED8">
 <div style="display: flex; gap: 20px; align-items: baseline; min-width: 0; flex: 1 1 320px">
@@ -275,7 +288,7 @@ a:focus-visible{outline:3px solid #A34E1A;outline-offset:3px}
 <p style="margin: 0; font-size: 16px; color: #4A5450">לבחירת הערך המרכזי של הגן, לפי מורשת, יזמות ועתיד</p>
 </div>
 </div>
-<a href="https://docs.google.com/document/d/12ieoukdQVUxhJ-uezRmyozbpynj37DY94hn418ATZiQ/edit?usp=sharing" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 2px solid #1E4D3B; border-radius: 4px; color: #1E4D3B; font-weight: 700; text-decoration: none">לבנק הערכים</a>
+<a class="brutalist-button" href="https://docs.google.com/document/d/12ieoukdQVUxhJ-uezRmyozbpynj37DY94hn418ATZiQ/edit?usp=sharing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg><span>לבנק הערכים</span></a>
 </li>
 <li style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 24px 0; border-bottom: 1px solid #D5DED8">
 <div style="display: flex; gap: 20px; align-items: baseline; min-width: 0; flex: 1 1 320px">
@@ -285,7 +298,7 @@ a:focus-visible{outline:3px solid #A34E1A;outline-offset:3px}
 <p style="margin: 0; font-size: 16px; color: #4A5450">כל הפרטים וההנחיות במקום אחד</p>
 </div>
 </div>
-<a href="https://drive.google.com/file/d/1r-kVatUvft4zfh6_QqYVH9DyRT9-0EsX/view?usp=sharing" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border: 2px solid #1E4D3B; border-radius: 4px; color: #1E4D3B; font-weight: 700; text-decoration: none">למסמך המלא</a>
+<a class="brutalist-button" href="https://drive.google.com/file/d/1r-kVatUvft4zfh6_QqYVH9DyRT9-0EsX/view?usp=sharing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg><span>למסמך המלא</span></a>
 </li>
 </ul>
 </div>
